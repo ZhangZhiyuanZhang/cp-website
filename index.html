@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Data Efficient Tactile Representation with Generalization to Unseen Objects">
-  <meta name="keywords" content="Representation Learning, Tactile Sensing, Imitation Learning">
+        content="Learning Canonical 3D Representation for Equivariant Policy">
+  <meta name="keywords" content="Equivariance, Imitation Learning, 3D Vision">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UniT: Data Efficient Tactile Representation with Generalization to Unseen Objects</title>
+  <title>Canonical Policy: Learning Canonical 3D Representation for Equivariant Policy</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -42,97 +42,96 @@
 </head>
 <body>
 
-
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">UniT: Data Efficient Tactile Representation with Generalization to Unseen Objects</h1>
+          <h1 class="title is-1 publication-title">Canonical Policy: Learning Canonical 3D Representation for Equivariant Policy</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://zhengtongxu.github.io/website/">Zhengtong Xu</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.raghavauppuluri.dev/">Raghava Uppuluri</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="">Xinwei Zhang</a><sup>1</sup>,
+              <a href="https://github.com/ZhangZhiyuanZhang">Zhiyuan Zhang</a><sup>1,*</sup>,
             </span>
             <span class="author-block">
-              <a href="">Cael Fitch</a><sup>1</sup>,
+              <a href="https://zhengtongxu.github.io/website/">Zhengtong Xu</a><sup>1,*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://food-science.uark.edu/people/faculty/uid/crandal/name/Philip+G.+Crandall/">Philip Glen Crandall</a><sup>2</sup>,
+              <a href="">Jai Nanda Lakamsani</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://showone90.wixsite.com/show">Wan Shou</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://sfelab.uark.edu/">Dongyi Wang</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-                <a href="https://www.purduemars.com/">Yu She</a><sup>1</sup>
+              <a href="https://www.purduemars.com/">Yu She</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Purdue University,</span>
-            <span class="author-block"><sup>2</sup>University of Arkansas</span>
+            <span class="author-block"><sup>1</sup>Purdue University</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
+              <!-- Placeholder links -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2408.06481"
-                   class="external-link button is-normal is-rounded is-dark">
+                <span class="button is-normal is-rounded is-light" disabled>
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
-                </a>
+                  <span>PDF (Coming Soon)</span>
+                </span>
               </span>
-              <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=K7dULei0I3Y"
-                   class="external-link button is-normal is-rounded is-dark">
+                <span class="button is-normal is-rounded is-light" disabled>
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
-                  <span>Video</span>
-                </a>
+                  <span>Video (Coming Soon)</span>
+                </span>
               </span>
-              <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/ZhengtongXu/UniT"
-                   class="external-link button is-normal is-rounded is-dark">
+                <span class="button is-normal is-rounded is-light" disabled>
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
-                  </a>
+                  <span>Code (Coming Soon)</span>
+                </span>
               </span>
-              <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://drive.google.com/drive/folders/1CkPqgNFCE6B1mr2pxYdNdSR-xAkSnxQc?usp=sharing"
-                   class="external-link button is-normal is-rounded is-dark">
+                <span class="button is-normal is-rounded is-light" disabled>
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data</span>
-                  </a>
+                  <span>Data (Coming Soon)</span>
+                </span>
+              </span>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</section>  
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Teaser. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Teaser</h2>
+        <div class="content has-text-centered">
+          <video id="Teaser" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/cp_videos/01.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Canonical Policy enables vision-conditioned policies to generalize across object appearances and viewpoints by learning canonical 3D representations, with improved sample efficiency.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Teaser. -->
+  </div>
 </section>
-
-
-
-
-
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -141,11 +140,11 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-centered">
-          <img id="teaser" src="./static/images/first_page.png" alt="First Page Image" width="100%">
+          <img id="pipline" src="./static/cp_images/Pipeline.svg" alt="First Page Image" width="100%">
         </div>
         <div class="content has-text-justified">
           <p>
-            UniT is an approach to tactile representation learning, using VQGAN to learn a compact latent space and serve as the tactile representation. It uses tactile images obtained from a single simple object to train the representation with generalizability. This tactile representation can be zero-shot transferred to various downstream tasks, including perception tasks and manipulation policy learning. Our benchmarkings on in-hand 3D pose and 6D pose estimation tasks and a tactile classification task show that UniT outperforms existing visual and tactile representation learning methods. Additionally, UniT's effectiveness in policy learning is demonstrated across three real-world tasks involving diverse manipulated objects and complex robot-object-environment interactions.
+            We introduce canonical policy, a principled framework for 3D equivariant imitation learning that unifies point cloud observations through a canonical representation. Built upon a rigorous theory of 3D canonical mappings, our method enables end-to-end learning of spatially equivariant policies from demonstrations. By leveraging geometric consistency through canonicalization and the expressiveness of generative policy models, such as diffusion models, canonical policy improves generalization and data efficiency in imitation learning.
           </p>
         </div>
       </div>

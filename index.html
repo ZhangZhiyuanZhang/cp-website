@@ -157,6 +157,155 @@
   </div>
 </section>
 
+<!-- Simulation Benchmark Videos Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Simulation Benchmark</h2>
+    <!-- Space for text above videos -->
+    <div class="content has-text-justified">
+      <p class="has-text-centered">
+        We benchmarked Canonical Policy and several point cloud baselines across 12 simulation tasks. Canonical policy consistently outperforms all baselines, achieving an average task success improvement of 18%.
+      </p>
+    </div>
+
+    <!-- First Row: 6 Non-metaworld Videos -->
+    <div class="columns is-multiline is-centered">
+      <!-- stack video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="stack-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/stack.mp4" type="video/mp4">
+          </video>
+          <p class="caption">Stack D1<sup>1</sup></p>
+        </div>
+      </div>
+      
+      <!-- mug video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="mug-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/mug_cleanup.mp4" type="video/mp4">
+          </video>
+          <p class="caption">Mug Cleanup D1<sup>1</sup></p>
+        </div>
+      </div>
+      
+      <!-- Nut Assembly D0 video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="tool-hang-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/nut_assembly.mp4" type="video/mp4">
+          </video>
+          <p class="caption">Nut Assembly D0<sup>1</sup></p>
+        </div>
+      </div>
+      
+      <!-- Stack Three D1 video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="stack_three-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/stack_three.mp4" type="video/mp4">
+          </video>
+          <p class="caption">Stack Three D1<sup>1</sup></p>
+        </div>
+      </div>
+      
+      <!-- threading video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="threading-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/threading.mp4" type="video/mp4">
+          </video>
+          <p class="caption">Threading D2<sup>2</sup></p>
+        </div>
+      </div>
+
+      <!-- square video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="square-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/square.mp4" type="video/mp4">
+          </video>
+          <p class="caption">Square D2<sup>1</sup></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="columns is-multiline is-centered">
+      <!-- Coffee D2 video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="coffee-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/coffee.mp4" type="video/mp4">
+          </video>
+          <p class="caption">Coffee D2<sup>1</sup></p>
+        </div>
+      </div>
+      
+      <!-- Hammer Cleanup video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="hammer_cleanup-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/hammer_cleanup.mp4" type="video/mp4">
+          </video>
+          <p class="caption">Hammer Cleanup D1<sup>1</sup></p>
+        </div>
+      </div>
+      
+      <!-- Push T video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="pusht-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/pusht.mp4" type="video/mp4">
+          </video>
+          <p class="caption">Push T<sup>2</sup></p>
+        </div>
+      </div>
+      
+      <!-- Cloth Folding video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="fold-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/fold.mp4" type="video/mp4">
+          </video>
+          <p class="caption">Cloth Folding<sup>3</sup></p>
+        </div>
+      </div>
+      
+      <!-- Object Covering video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="cover-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/cover.mp4s" type="video/mp4">
+          </video>
+          <p class="caption">Object Covering<sup>3</sup></p>
+        </div>
+      </div>
+
+      <!-- Box Closing video -->
+      <div class="column is-2">
+        <div class="content has-text-centered">
+          <video id="close-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/sim/close.mp4" type="video/mp4">
+          </video>
+          <p class="caption">Box Closing<sup>3</sup></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Space for text below videos -->
+    <div class="content has-text-justified mt-4">
+      <p class="has-text-centered" style="font-weight: 400; color: #666; font-family: 'Noto Sans', sans-serif; border-top: 1px dotted #e5e5e5; padding-top: 12px; margin-top: 20px; font-size: 0.95em;">
+        <a href="https://robomimic.github.io/"><sup>1</sup>Robomimic</a> &nbsp;&nbsp;
+        <a href="https://diffusion-policy.cs.columbia.edu/"><sup>2</sup>Diffusion Policy</a> &nbsp;&nbsp;
+        <a href="https://github.com/yjy0625/equibot"><sup>3</sup>Equibot</a> &nbsp;&nbsp;
+        <!-- Space for adding links later -->
+      </p>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">

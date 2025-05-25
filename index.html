@@ -72,7 +72,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://drive.google.com/file/d/1osYy4QyQ163T6NxUvIznbjSPJzv7yW8C/view?usp=drive_link"
+                <a href="https://drive.google.com/file/d/1v1Jt42wqdqUyr8J1MoiasY026E_rs78j/view?usp=drive_link"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -82,7 +82,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://drive.google.com/file/d/15YgEse-NcXgBSvBfw30566NMxydH53sX/view?usp=drive_link"
+                <a href="https://drive.google.com/file/d/1fKU6Cs5frtCxBv3SxwQF2hUcB0vKy1US/view?usp=drive_link"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -123,7 +123,7 @@
         <h2 class="title is-3">Teaser</h2>
         <div class="content has-text-centered">
           <video id="Teaser" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/01.mp4" type="video/mp4">
+            <source src="./static/videos/Teaser.mp4" type="video/mp4">
           </video>
         </div>
         <div class="content has-text-justified">
@@ -315,36 +315,36 @@
         <h2 class="title is-4">Block Stacking</h2>
         <div class="content has-text-justified">
           <p>
-            In the block stacking task, the robot stacks an I-shaped block onto a T-shaped block. In the top video, under the original setup, the canonical policy performs reliably. In the bottom video, even with changes in block color, the policy continues to execute the task accurately—showcasing robustness to appearance shifts.
+            In the block stacking task, the robot stacks an I-shaped block onto a T-shaped block. On the left, under the original setup, the canonical policy performs reliably. On the right, even with changes in block color, the policy continues to execute the task accurately—showcasing robustness to appearance shifts.
           </p>
         </div>
         <div class="content has-text-centered">
           <video id="Block Stacking" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/Bs.mp4" type="video/mp4">
+            <source src="./static/videos/BS.mp4" type="video/mp4">
           </video>
         </div>
 
         <h2 class="title is-4">Shoe Alignment</h2>
         <div class="content has-text-justified">
           <p>
-            Next is the shoe alignment task, where the goal is to pick up the right shoe and align it side by side with the left shoe. In the top video, the policy succeeds under the original setup. In the bottom video, it maintains high performance even when the shoe color is completely changed—demonstrating strong appearance invariance.
+            Next is the shoe alignment task, where the goal is to pick up the right shoe and align it side by side with the left shoe. The policy succeeds under the original setup on the left, and maintains high performance even when the shoe color is completely changed on the right, demonstrating strong appearance invariance.
           </p>
         </div>
         <div class="content has-text-centered">
           <video id="Shoe Alignment" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/Sa.mp4" type="video/mp4">
+            <source src="./static/videos/SA.mp4" type="video/mp4">
           </video>
         </div>
 
         <h2 class="title is-4">Can Insertion</h2>
         <div class="content has-text-justified">
           <p>
-            The can insertion task is more precision-demanding. The robot must pick up a can on the right and insert it into a hole on the left. In the top video, the canonical policy often succeeds under the original setup. In the bottom video, it maintains comparable performance even under color-shifted conditions—highlighting its robustness in grasping and precise placement.
+            The can insertion task is more precision-demanding. The robot must pick up a can on the right and insert it into a hole on the left. Despite the challenge, canonical policy consistently succeeds under both the original and color-shifted settings, validating its grasping and placement accuracy.
           </p>
         </div>
         <div class="content has-text-centered">
           <video id="Can Insertion" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/Ci.mp4" type="video/mp4">
+            <source src="./static/videos/CI.mp4" type="video/mp4">
           </video>
         </div>
 
@@ -356,7 +356,7 @@
         </div>
         <div class="content has-text-centered">
           <video id="Table Organzation" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/To.mp4" type="video/mp4">
+            <source src="./static/videos/TO.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -377,7 +377,7 @@
         </div>
         <div class="content has-text-centered">
           <video id="Shoe Alignment" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/Sa Shape.mp4" type="video/mp4">
+            <source src="./static/videos/SA Shape.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -412,6 +412,11 @@
           <video id="Right-Angled" autoplay controls muted loop playsinline width="100%">
             <source src="./static/videos/Ur Right.mp4" type="video/mp4">
           </video>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Failure case analysis: The performance drop in the Right-Angled View stems from the single-camera setup, where large viewpoint shifts lead to significantly different point clouds. These new observations often include previously unseen regions, making it difficult for the policy to generalize. In contrast, under small-angle shifts (Frontal View), there is substantial overlap between training and test point clouds, allowing the canonical policy to exploit geometric equivariance and consistently map inputs to the same canonical pose. 
+          </p>
         </div>
       </div>
     </div>
